@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="surface area of a cube" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="david ukiri" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png" />
+    <link rel="manifest" href="./fav/favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Surface area of a rectangular prism</title>
+  </head>
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Surface area of a rectangular prism</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <table>
+          <tr>
+            <th>
+              <img src="./img/surface area of a rectangular prism.PNG"  width="87%" 
+                height="180%"/>
+            </th>
+            <th>
+              <h2>Formula</h2>
+              <h3>volume = 2 * ( w * l + h * l + h * w)</h3>
+            </th>
+          </tr>
+        </table>
+        <br>
+        <b>
+          <h4>Enter the dimensions of your prism</h4>
+        </b>
+        <!--numberic text box for user input-->
+        
+        <form action="#">
+          <p>side l </p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="Side l"
+            />
+            <label class="mdl-textfield__label" for="Side l">l ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <form action="#">
+          <p>side w </p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="Side w"
+            />
+            <label class="mdl-textfield__label" for="Side w">w ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <form action="#">
+          <p>side h </p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="Side h"
+            />
+            <label class="mdl-textfield__label" for="Side h">h ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+				
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculate()"
+        >
+          Calculate
+        </button>
+        <br />
+        <p>
+          <div id="answers">
+            <div id="user-info"></div>
+          </div>
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
